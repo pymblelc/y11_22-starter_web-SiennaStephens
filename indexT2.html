@@ -7,6 +7,7 @@
     <title>AI test</title>
     <script src="ai.js" defer></script>
     <script src="script2.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
@@ -18,16 +19,17 @@
 <body>
     <img id="myPhoto" width="200" src="https://www.theland.com.au/images/transform/v1/crop/frm/HP8JNNb9L5GxeLhGSmNhXK/491ff6bf-d60b-469b-89f8-432539ffb0d6.JPG/r500_0_2908_2270_w1200_h678_fmax.jpg" alt="a photo">
    
-    <p><input type="button" value="Analyse" id="btnAnalyse"></p>
-    <p><input type="button" value="Determine" id="btnDetermine"></p>
-    <p><input type="button" value="Clear" id="btnClear"></p>
-    <p><input type="button" value="Next" id="btnNext"></p>
-    
-    
-    
-    
-    <p id="myText">
-        description goes here
-    </p>
+   <a class = "buttons"> </a>
+        <p><input type="button" value="Analyse Photos" id="btnAnalyse"></p>
+        <p id="myText">
+            <!-- description goes here -->
+        </p>
+        <p><input type="button" value="Determine" id="btnDetermine"></p>
+        <p id ="determineText">
+            <!-- Face is accepted or not response goes here. -->
+        </p>
+        <p><input type="button" value="Take Photo" id="btnTakephoto"></p>
+        <p id ="TakephotoText">
+            <!-- once the take photo button is clicked it will take the user to a screen connected to the camera -->
 </body>
 </html>
