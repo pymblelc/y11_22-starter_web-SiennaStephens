@@ -34,45 +34,42 @@
         value=" Close Camera"
         id="btnCloseCamera"
       />
-      <p>
         <input
           class="buttons"
           type="button"
           value="Clear Camera"
           id="btnClearcamera"
         />
-      </p>
     </div>
-
+    </br> </br> </br>
+    
+    <div id="frames">
     <video id="webcam" autoplay playsinline width="640" height="480"></video>
     <canvas id="canvas" class="d-none"></canvas>
+    </div>
+
     <!-- <audio id="snapSound" src="audio/snap.wav" preload = "auto"></audio> -->
     <h2>Click the 'Take Photo' button to capture the suspect</h2>
 
     <div class="buttons2">
-      <input
-        class="buttons"
-        type="button"
-        value="Take Photo"
-        id="btnTakephoto"
-      />
+
+      <div id="phototakediv">
+      <input class="buttons" type="button" value="Take Photo" id="btnTakephoto"/>
+      </div>
+
+
+      <div id="analysediv">
       <input class="buttons" type="button" value="Analyse" id="btnAnalyse" />
-      <p id="AnalyseText">
-        <!-- once the Analyse button is clicked it will provide a dignosis of the suspect criteria  -->
-      </p>
-      <input
-      class="buttons"
-      type="button"
-      value="Determine"
-      id="btnDetermine"
-   />
-   <p id ="Determine">
-    <!-- It will tell the user if the button meets the criteria of one of the suspects in the databases -->
-</p>
+      <div id="AnalyseText"></div> <!-- once the Analyse button is clicked it will provide a dignosis of the suspect criteria  -->
+      </div>
+
+
+      <div id="determinediv">
+      <input class="buttons" type="button" value="Determine" id="btnDetermine"/>
+      <p id ="Determine"></p><!-- It will tell the user if the button meets the criteria of one of the suspects in the databases -->
+     </div>
+
     </div>
    
-
-   
-    <p id="results"></p>
   </body>
 </html>
