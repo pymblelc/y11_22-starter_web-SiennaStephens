@@ -117,6 +117,16 @@ function analyseFaces(data) {
     } else {
       glassesText = "glasses";
     }
+    // Female or Male
+    let gender = data[person].faceAttributes.gender;
+    console.log(gender);
+    let genderText = "";
+    if (gender == "female") {
+      genderText = "female";
+    } else {
+      genderText = "male";
+    }
+
 
     let text =
       "<li>" + "Face " + (parseInt(person) + 1) + "</li>";
@@ -126,6 +136,8 @@ function analyseFaces(data) {
     personList.innerHTML += "<li>" + glassesText + "</li>";
 
     personList.innerHTML += "<li>" + hairText + "</li>";
+    
+    personList.innerHTML += "<li>" + genderText + "</li>";
 
     results.appendChild(personList);
   }
