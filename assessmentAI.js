@@ -13,9 +13,6 @@ const webcam = new Webcam(webcamElement, "user", canvasElement);
 
 let results = document.getElementById("AnalyseText");
 let determineresults = document.getElementById("Determine")
-
-let myButton = document.getElementById("btnAnalyse");
-let myText = document.getElementById("myText");
 let btnDetermine = document.getElementById("btnDetermine");
 let determineText = document.getElementById("determineText");
 // let btnNext = document.getElementById("btnNext");
