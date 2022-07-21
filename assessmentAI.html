@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI test</title>
+    <script src="ai.js" defer></script>
+    <script src="assessmentAI.js" defer></script>
+    <!-- <script src="script2.js" defer></script> -->
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"
+    ></script>
+    <link rel="stylesheet" href="assessmentAI.css" />
+  </head>
+  <body>
+    <h1>Suspect Database</h1>
+    <h2>
+      Click the 'Open Camera' button to open the camera to identify the suspect
+    </h2>
+
+    <div class="buttons1">
+      <input
+        class="buttons"
+        type="button"
+        value="Open Camera"
+        id="btnOpenCamera"
+      />
+      <input
+        class="buttons"
+        type="button"
+        value=" Close Camera"
+        id="btnCloseCamera"
+      />
+        <input
+          class="buttons"
+          type="button"
+          value="Clear Camera"
+          id="btnClearcamera"
+        />
+    </div>
+    </br> </br> </br>
+    
+    <div id="frames">
+    <video id="webcam" autoplay playsinline width="640" height="480"></video>
+    <canvas id="canvas" class="d-none"></canvas>
+    </div>
+
+    <!-- <audio id="snapSound" src="audio/snap.wav" preload = "auto"></audio> -->
+    <h2>Click the 'Take Photo' button to capture the suspect</h2>
+
+    <div class="buttons2">
+
+      <div id="phototakediv">
+      <input class="buttons" type="button" value="Take Photo" id="btnTakephoto"/>
+      </div>
+
+
+      <div id="analysediv">
+      <input class="buttons" type="button" value="Analyse" id="btnAnalyse" />
+      <div id="AnalyseText"></div> <!-- once the Analyse button is clicked it will provide a dignosis of the suspect criteria  -->
+      </div>
+
+
+      <div id="determinediv">
+      <input class="buttons" type="button" value="Determine" id="btnDetermine"/>
+      <p id ="Determine"></p><!-- It will tell the user if the button meets the criteria of one of the suspects in the databases -->
+     </div>
+
+    </div>
+   
+  </body>
+</html>

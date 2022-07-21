@@ -1,0 +1,27 @@
+.friends{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+.friend{
+    aspect-ratio: 1;
+    width: 200px;
+    object-fit: contain;
+    border:1px solid black;
+}
+.flex-container{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.friend:hover{
+    opacity: 75%;
+}
+.friend {
+    border:1px solid rgb(0,0,0);
+    border-radius: 10px;
+    padding: 2px;
+    width: 104px;
+}
